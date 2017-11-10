@@ -51,10 +51,10 @@ function viewCart() {
 
 function total() {
           var i =0;
-          total = 0;
+          var total = 0;
           var keys = Object.keys(cart);
           for(var i=0; i<cart.length-1; i++){
-            var total =  parseFloat(total) + parseFloat(cart[i][Object.keys(cart[i])]);
+            total =  total + parseFloat(cart[i][Object.keys(cart[i])]);
             }
           return total;
 
