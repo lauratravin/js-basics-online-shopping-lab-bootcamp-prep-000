@@ -54,7 +54,7 @@ function total() {
           total = 0;
           var keys = Object.keys(cart);
           for(var i=0; i<cart.length-1; i++){
-            var total =  total+ cart[i][Object.keys(cart[i])];
+            var total =  parse.Int(total) + parse.Int(cart[i][Object.keys(cart[i])]);
             }
           return total;  
 
