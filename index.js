@@ -41,7 +41,7 @@ function viewCart() {
             textTemp =  textTemp + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +', ';
           }
             textFinal = text + textTemp + ' and '+ Object.keys(cart[cart.length-1]) +' at $'+ cart[cart.length-1][Object.keys(cart[cart.length-1])] +'.' ;
-
+            console.log(textFinal);
       }
 
 
