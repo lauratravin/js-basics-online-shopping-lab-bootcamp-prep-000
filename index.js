@@ -39,8 +39,6 @@ function viewCart() {
       } else if((cart.length == 2)){
             var textFinal = text + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +' and '+ Object.keys(cart[i+1]) +' at $'+ cart[i+1][Object.keys(cart[i+1])]+'.';
             console.log(textFinal);
-               
-        
       }  else {
           for(var i=0; i<cart.length-2; i++){
             textTemp =  textTemp + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +', ';
