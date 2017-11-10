@@ -55,10 +55,10 @@ function total() {
           var keys = Object.keys(cart);
           for(var i=0; i<cart.length-1; i++){
             var total =  total+ cart[i][Object.keys(cart[i])];
-            }     
+            }
           return total;  
 
-          
+
 }
 
 function removeFromCart(item) {
