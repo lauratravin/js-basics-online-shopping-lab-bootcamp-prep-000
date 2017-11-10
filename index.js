@@ -40,7 +40,7 @@ function viewCart() {
             var textFinal = text + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +' and '+ Object.keys(cart[i+1]) +' at $'+ cart[i+1][Object.keys(cart[i+1])]+'.';
             console.log(textFinal);
       }  else {
-          for(var i=0; i<cart.length-2; i++){
+          for(var i=0; i<cart.length-1; i++){
             var textTemp =  text + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +', ';
             }
 
