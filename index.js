@@ -59,8 +59,19 @@ function total() {
           return total;
 }
 
-function removeFromCart(item) {
-  // write your code here
+function removeFromCart(itemName) {
+            var i =0;
+            var keys = Object.keys(cart);
+
+            for(var i=0; i<cart.length; i++){
+
+                  If (cart[i].hasOwnProperty(itemName)){
+                    delete cart[i].(keys[i]);
+                  }
+              
+              }
+            return cart;
+  
 }
 
 function placeOrder(cardNumber) {
