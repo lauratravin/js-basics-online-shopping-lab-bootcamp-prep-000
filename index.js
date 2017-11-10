@@ -68,10 +68,10 @@ function removeFromCart(itemName) {
                   If (cart[i].hasOwnProperty(itemName)){
                     delete cart[i].(keys[i]);
                   }
-              
+
               }
             return cart;
-  
+
 }
 
 function placeOrder(cardNumber) {
