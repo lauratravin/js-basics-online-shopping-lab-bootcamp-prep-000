@@ -27,7 +27,7 @@ function addToCart(itemName) {
 
 function viewCart() {
       var text = 'In your cart, you have ';
-      var textTemp;
+
       var i =0;
       var keys = Object.keys(cart);
       if (cart.length == 0){
@@ -41,9 +41,10 @@ function viewCart() {
             console.log(textFinal);
       }  else {
           for(var i=0; i<cart.length-2; i++){
-            textTemp =  textTemp + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +', ';
+            var textTemp =  text + Object.keys(cart[i]) +' at $'+ cart[i][Object.keys(cart[i])] +', ';
             }
-            textFinal = text + textTemp + 'and '+ Object.keys(cart[cart.length-1]) +' at $'+ cart[cart.length-1][Object.keys(cart[cart.length-1])] +'.' ;
+
+            textFinal =  textTemp + 'and '+ Object.keys(cart[cart.length-1]) +' at $'+ cart[cart.length-1][Object.keys(cart[cart.length-1])] +'.' ;
             console.log(textFinal);
       }
 
