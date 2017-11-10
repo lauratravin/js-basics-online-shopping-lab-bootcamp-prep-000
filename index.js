@@ -57,8 +57,6 @@ function total() {
             total =  total + cart[i][Object.keys(cart[i])];
             }
           return total;
-
-
 }
 
 function removeFromCart(item) {
