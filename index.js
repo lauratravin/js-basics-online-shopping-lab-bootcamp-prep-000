@@ -52,7 +52,6 @@ function viewCart() {
 function total() {
           var i =0;
           var total = 0;
-          var keys = Object.keys(cart);
           for(var i=0; i<cart.length; i++){
             total =  total + cart[i][Object.keys(cart[i])];
             }
@@ -66,7 +65,7 @@ function removeFromCart(itemName) {
             for(var i=0; i<cart.length; i++){
 
                   if (cart[i].hasOwnProperty(itemName)){
-                    delete cart[i][itemName];
+                    delete cart[i][keys[i]];
                   }
 
               }
