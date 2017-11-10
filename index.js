@@ -47,15 +47,6 @@ function viewCart() {
             textFinal =  textTemp + 'and '+ Object.keys(cart[cart.length-1]) +' at $'+ cart[cart.length-1][Object.keys(cart[cart.length-1])] +'.' ;
             console.log(textFinal);
       }
-
-
-      // {
-      //         for(var i=0; i<cart.length; i++){
-      //            textFinal = text + cart[i].itemName +' at $'+ cart[i].itemPrice +', ';
-      //         }
-      //         text = text.slice(0,-2)+'.';
-      //         console.log(textFinal);
-      // }
 }
 
 function total() {
